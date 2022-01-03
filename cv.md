@@ -16,6 +16,7 @@ Hi! I'm 25 years old programmer. I chose the direction of Fullstack Front-end De
 * HTML
 * CSS
 * JavaScript
+* Git
 * C
 ********************************
 ##Code Example
@@ -30,6 +31,15 @@ function capital(capitals){
 }
 ```
 ***
-
-
-
+##Experience
+***
+Have some 21 school projects [get_next_line](https://github.com/meloknaasfalte/get_next_line), [ft_printf](https://github.com/meloknaasfalte/ft_printf)
+***
+##Education
+***
+* University: RANEPA,Economic security (_incomplete higher education_)
+* [21 School](https://21-school.ru/) (pool)
+***
+##Language
+***
+English: B1(Intermediate)
