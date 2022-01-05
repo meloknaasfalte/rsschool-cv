@@ -1,1 +1,130 @@
-/*здесь будет css!*/
+@font-face {
+    font-family: Inter;
+    src: url("assets/fonts/inter/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+    }
+}
+
+
+.body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Inter';
+}
+
+.developer-name {
+    font-weight: bold;
+}
+
+.container {
+
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    transition: .3s;
+}
+
+
+.nav {
+    flex-direction: row;
+}
+
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.my-photo {
+    width: 250px;
+    height: 300px;
+}
+
+
+.section {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px black solid;
+
+}
+
+.description {
+    width: 50%;
+}
+
+
+.code-example {
+    width: 70%;
+}
+
+
+.section-title {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #829985;
+}
+
+
+.link {
+    text-decoration: none;
+    color: #9d71e3;
+    transition: color 0.5s;
+}
+
+
+.link:hover {
+    color: #5d7260;
+}
+
+
+.rs-school-img {
+    width: 150px;
+    height: 50px;
+}
+
+
+.github-icon {
+    width: 100px;
+    height: 100px;
+}
+
+
+.footer {
+    display: flex;
+}

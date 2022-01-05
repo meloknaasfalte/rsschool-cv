@@ -4,9 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>cv</title>
+    <link rel="icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-    <img src="https://avatars.githubusercontent.com/u/76536636?s=400&v=4">
+<body class="body">
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code Example</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#language" class="nav-link">Language</a></li>
+                </ul>    
+            </nav>
+        </div>    
+    </header>
+
+    <main class="main main-container">
+        <div class="container">
+            <section class="section" id="profile">
+                <h1 class="developer-name section-title">Musin Vladislav</h1>
+                <img src="assets/img/my_photo.jpg" class="my-photo" alt="my-photo">
+            </section>
+            <section class="section" id="contacts">
+                <h2 class="section-title">Contacts</h2>
+                <ul class="contacts-list description">
+                    <li>Location: Russia, Moscow</li>
+                    <li>Email: vem.mus@gmail.com</li>
+                    <li>GitHub: <a href="https://github.com/meloknaasfalte">meloknaasfalte</a></li>
+                    <li>Codewars <a href="https://www.codewars.com/users/meloknaasfalte">meloknaasfalte</a></li>
+                </ul>
+            </section>
+            <section class="section" id="about">
+                <h2 class="section-title">About me</h2>
+                <div class="description">Hi! I'm 25 years old programmer. I chose the direction of Fullstack Front-end Developer. I love team projects, communicate easily with other people, had passed the pool of 21 School, where i fell in love with coding.</div>    
+            </section>
+            <section class="section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul class="skills-list description">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Java Script</li>
+                    <li>C</li>
+                </ul>
+            </section>
+            <section class="section" id="code">
+                <h2 class="section-title">Code example</h2>
+                <div class="code-example description">
+                    <pre>
+                        <code>
+                        function squareDigits(num){
+
+                            let res = "";
+                            let n = String(num);
+                        
+                            for(let i = 0; i > n.length; i++){
+                                res += String(Math.pow(Number(n[i]), 2));
+                            }
+                            return(Number(res));
+                        }
+                        </code>
+                    </pre>
+                </div>
+            </section>
+            <section class="section" id="experience">
+                <h2 class="section-title">Experience</h2>
+                <div class="description">
+                    Have some 21 school projects <a href="https://github.com/meloknaasfalte/ft_printf"> ft_printf</a>
+                        <a href="https://github.com/meloknaasfalte/get_next_line">get_next_line</a>
+                </div>
+            </section>
+            <section class="section" id="education">
+                <h2 class="section-title">Education</h2>
+                <ul class="description">
+                    <li>University: RANEPA,Economic security (incomplete higher education)</li>
+                    <li>21 School (pool)</li>
+                </ul>    
+            </section>
+            <section class="section" id="language">
+                <h2 class="section-title">Language</h2>
+                <div class="description">English: B1(Intermediate)</div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container"></div>
+            <a href="https://rs.school/js/"><img class="rs-school-img" src="./assets/img/favicon.ico" alt="rs-school-avatar"></a>
+            <a href="https://github.com/meloknaasfalte"><img class="github-icon" src="./assets/img/git_icon.png" alt="git-avatar"></a>
+            <p>2022</p>
+    </footer>
 </body>
 </html>
