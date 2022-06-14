@@ -1,102 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cv</title>
-    <link rel="icon" href="assets/img/favicon.ico">
+    <title>rsschool-cv-html</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/img/rs_school.svg">
 </head>
+
 <body class="body">
     <header class="header">
-        <div class="container">
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
-                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                    <li class="nav-item"><a href="#code" class="nav-link">Code Example</a></li>
-                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-                    <li class="nav-item"><a href="#language" class="nav-link">Language</a></li>
-                </ul>    
-            </nav>
-        </div>    
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+                <li class="navigation__item"><a href="#skills" class="navigation__link">Skills</a></li>
+                <li class="navigation__item"><a href="#code" class="navigation__link">CodeExample</a></li>
+                <li class="navigation__item"><a href="#project" class="navigation__link">Projects</a></li>
+                <li class="navigation__item"><a href="#education" class="navigation__link">Education</a></li>
+            </ul>
+        </nav>
     </header>
+    <main class="main">
 
-    <main class="main main-container">
-        <div class="container">
-            <section class="section" id="profile">
-                <h1 class="developer-name section-title">Musin Vladislav</h1>
-                <img src="assets/img/my_photo.jpg" class="my-photo" alt="my-photo">
-            </section>
-            <section class="section" id="contacts">
-                <h2 class="section-title">Contacts</h2>
-                <ul class="contacts-list description">
-                    <li>Location: Russia, Moscow</li>
-                    <li>Email: vem.mus@gmail.com</li>
-                    <li>GitHub: <a href="https://github.com/meloknaasfalte">meloknaasfalte</a></li>
-                    <li>Codewars <a href="https://www.codewars.com/users/meloknaasfalte">meloknaasfalte</a></li>
-                </ul>
-            </section>
-            <section class="section" id="about">
-                <h2 class="section-title">About me</h2>
-                <div class="description">Hi! I'm 25 years old programmer. I chose the direction of Fullstack Front-end Developer. I love team projects, communicate easily with other people, had passed the pool of 21 School, where i fell in love with coding.</div>    
-            </section>
-            <section class="section" id="skills">
-                <h2 class="section-title">Skills</h2>
-                <ul class="skills-list description">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Java Script</li>
-                    <li>C</li>
-                </ul>
-            </section>
-            <section class="section" id="code">
-                <h2 class="section-title">Code example</h2>
-                <div class="code-example description">
+        <div class="welcome">
+            <div class="container">
+                <div class="welcome__img">
+                    <img src="./assets/img/myfoto.jpeg" alt="myfoto">
+                </div>
+                <span class="welcome__subtitle">Hi! My name is <span>Vlad</span></span>
+                <span class="welcome__subtitle_second">and i'm a</span>
+                <h1 class="welcome__title">Front-End Developer</h1>
+            </div>
+        </div>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="wrapper">
+                    <h2 class="title">About</h2>
+                    <span class="about__content">I’m 25 years old programmer. I chose the direction of Fullstack
+                        Front-end
+                        Developer. I love team projects, communicate easily with other people, had passed the pool of 21
+                        School, where i fell in love with coding.</span>
+                    <ul class="about__contact">
+                        <li><span class="media">telegram</span>: @agaagadada</li>
+                        <li><span class="media">discord</span>: djGavrik#3153</li>
+                        <li><span class="media">email</span>: vem.mus@gmail.com</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <div class="container">
+                <div class="wrapper">
+                    <h2 class="title">Skills</h2>
+                    <div class="skills__content">
+                        <div class="skill">
+                            <img src="./assets/img/htmllogo.jpg" alt="htmllogo.jpg">
+                        </div>
+                        <div class="skill">
+                            <img src="./assets/img/csslogo.jpg" alt="csslogo.jpg">
+                        </div>
+                        <div class="skill">
+                            <img src="./assets/img/jslogo.jpg" alt="jslogo.jpg">
+                        </div>
+                        <div class="skill">
+                            <img src="./assets/img/githublogo.jpg" alt="githublogo.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="code" id="code">
+            <div class="container">
+                <div class="wrapper">
+                    <h2 class="title">CodeExample</h2>
                     <pre>
-                        <code>
-                        function squareDigits(num){
-
-                            let res = "";
-                            let n = String(num);
-                        
-                            for(let i = 0; i > n.length; i++){
-                                res += String(Math.pow(Number(n[i]), 2));
+                        <code class="code__example">
+                            function getParticipants(h){
+                                let n = 1;
+                                while (h > (n *(n - 1)/2))
+                                    n++;
+                                return n;
                             }
-                            return(Number(res));
-                        }
                         </code>
                     </pre>
                 </div>
-            </section>
-            <section class="section" id="experience">
-                <h2 class="section-title">Experience</h2>
-                <div class="description">
-                    Have some 21 school projects <a href="https://github.com/meloknaasfalte/ft_printf"> ft_printf</a>
-                        <a href="https://github.com/meloknaasfalte/get_next_line">get_next_line</a>
+            </div>
+        </section>
+
+        <section class="project" id="project">
+            <div class="container">
+                <div class="wrapper">
+                    <h2 class="title">Projects</h2>
+                    <a href="https://github.com/meloknaasfalte/ft_printf">ft_printf</a>
+                    <a href="https://github.com/meloknaasfalte/libft">libft</a>
                 </div>
-            </section>
-            <section class="section" id="education">
-                <h2 class="section-title">Education</h2>
-                <ul class="description">
-                    <li>University: RANEPA,Economic security (incomplete higher education)</li>
-                    <li>21 School (pool)</li>
-                </ul>    
-            </section>
-            <section class="section" id="language">
-                <h2 class="section-title">Language</h2>
-                <div class="description">English: B1(Intermediate)</div>
-            </section>
-        </div>
+            </div>
+        </section>
+
+        <section class="education" id="education">
+            <div class="container">
+                <div class="wrapper">
+                    <h2 class="title">Education</h2>
+                    <ul class="education__list">
+                        <li>University: RANEPA,Economic security (incomplete higher education)</li>
+                        <li>21 School (pool)</li>
+                        <li>English: B1(Intermediate)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer class="footer">
-        <div class="container"></div>
-            <a href="https://rs.school/js/"><img class="rs-school-img" src="./assets/img/favicon.ico" alt="rs-school-avatar"></a>
-            <a href="https://github.com/meloknaasfalte"><img class="github-icon" src="./assets/img/git_icon.png" alt="git-avatar"></a>
-            <p>2022</p>
+        <div class="container">
+            <div class="footer__wrapper">
+                <ul>
+                    <li class="year">© 2022 by Musin Vladislav</li>
+                    <li class="rslogo"><a href="https://rs.school/"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 552.85 198.67">
+                                <title>rs_school</title>
+                                <g data-name="Layer 2">
+                                    <g data-name="Layer 1">
+                                        <path
+                                            d="M275.36 61.37l26.29-1.65q.86 6.41 3.48 9.76 4.28 5.43 12.2 5.43 5.91 0 9.12-2.77a8.34 8.34 0 0 0 3.2-6.44 8.18 8.18 0 0 0-3-6.22q-3-2.74-14.15-5.19-18.18-4.08-25.93-10.86a21.84 21.84 0 0 1-7.81-17.26 23.44 23.44 0 0 1 4-13 26.47 26.47 0 0 1 12-9.64q8-3.51 22-3.51 17.14 0 26.14 6.38t10.71 20.28l-26.05 1.52q-1-6-4.36-8.78t-9.2-2.77c-3.21 0-5.63.69-7.25 2.05a6.25 6.25 0 0 0-2.44 5 5 5 0 0 0 2 3.84q1.95 1.77 9.27 3.3 18.12 3.9 26 7.9t11.4 9.91a25.12 25.12 0 0 1 3.57 13.24 28.37 28.37 0 0 1-4.75 15.86 29.83 29.83 0 0 1-13.3 11q-8.55 3.75-21.54 3.75-22.81 0-31.6-8.78t-10-22.35zM6.27 91V1.53h46.06q12.81 0 19.58 2.19a20.93 20.93 0 0 1 10.92 8.14A24.75 24.75 0 0 1 87 26.35a24.8 24.8 0 0 1-3.2 12.84A24.91 24.91 0 0 1 75.07 48a33.63 33.63 0 0 1-9.7 3.54 27.79 27.79 0 0 1 7.19 3.29A27.79 27.79 0 0 1 77 59.49 35.16 35.16 0 0 1 80.85 65l13.38 26H63L48.24 63.63q-2.81-5.31-5-6.9a11.63 11.63 0 0 0-6.78-2.07H34V91zM34 37.76h11.68A41 41 0 0 0 53 36.54a7.3 7.3 0 0 0 4.48-2.81 8.24 8.24 0 0 0 1.74-5.18 8.23 8.23 0 0 0-2.75-6.65q-2.74-2.32-10.31-2.32H34zM0 167.56l26.29-1.64q.86 6.41 3.48 9.76Q34 181.11 42 181.11q5.91 0 9.12-2.78a8.34 8.34 0 0 0 3.2-6.44 8.2 8.2 0 0 0-3-6.22q-3-2.74-14.15-5.18-18.18-4.1-25.93-10.86a21.87 21.87 0 0 1-7.81-17.27 23.49 23.49 0 0 1 4-13 26.47 26.47 0 0 1 12-9.64q8-3.51 22-3.51 17.14 0 26.14 6.38t10.71 20.28l-26 1.53q-1-6-4.36-8.79t-9.19-2.74q-4.81 0-7.25 2a6.25 6.25 0 0 0-2.44 5 5 5 0 0 0 2 3.85q1.95 1.77 9.27 3.29 18.12 3.9 26 7.9t11.4 9.91a25.15 25.15 0 0 1 3.57 13.24 28.35 28.35 0 0 1-4.75 15.86 29.83 29.83 0 0 1-13.3 11q-8.55 3.75-21.54 3.75-22.81 0-31.6-8.78T0 167.56zm163-7.01l24.22 7.32a44.72 44.72 0 0 1-7.69 17 33.46 33.46 0 0 1-13 10.31q-7.78 3.47-19.8 3.47-14.58 0-23.82-4.23t-16-14.91q-6.72-10.67-6.71-27.31 0-22.18 11.8-34.11t33.4-11.92q16.91 0 26.57 6.84t14.36 21l-24.4 5.43a21 21 0 0 0-2.68-6 16 16 0 0 0-5.67-4.88 16.31 16.31 0 0 0-7.51-1.71q-9.39 0-14.39 7.56-3.8 5.61-3.79 17.61 0 14.86 4.52 20.38t12.69 5.51q7.92 0 12-4.45t5.9-12.91zm45.51-52.83h27.63V139h30.2v-31.28h27.75v89.43h-27.75V161h-30.2v36.18h-27.63zm102.78 44.77q0-21.88 12.2-34.1t34-12.2q22.32 0 34.4 12T404 151.76q0 15.69-5.28 25.72a37.54 37.54 0 0 1-15.25 15.61q-10 5.58-24.86 5.58-15.12 0-25-4.82a37.59 37.59 0 0 1-16.07-15.25q-6.26-10.42-6.25-26.11zm27.63.13q0 13.55 5 19.46t13.7 5.91q8.91 0 13.79-5.79t4.88-20.8q0-12.63-5.1-18.46t-13.82-5.82A16.78 16.78 0 0 0 344 133q-5.07 6-5.08 19.62z" />
+                                        <path
+                                            d="M392.28 152.49q0-21.88 12.2-34.1t34-12.2q22.34 0 34.41 12t12.07 33.58q0 15.69-5.27 25.72a37.6 37.6 0 0 1-15.25 15.61q-10 5.58-24.86 5.58-15.13 0-25-4.82a37.67 37.67 0 0 1-16.08-15.25q-6.22-10.43-6.22-26.12zm27.64.13q0 13.55 5 19.46t13.72 5.92q8.91 0 13.79-5.79t4.88-20.8q0-12.63-5.09-18.46t-13.82-5.82A16.77 16.77 0 0 0 425 133q-5.09 6-5.08 19.62z" />
+                                        <path d="M482.08 107.72h27.64v67.41h43.13v22h-70.77z" />
+                                    </g>
+                                </g>
+                            </svg></a></li>
+                    <li class="githublogo"><a href="https://github.com/meloknaasfalte">GitHub</a></li>
+
+                </ul>
+            </div>
+        </div>
     </footer>
 </body>
+
 </html>
