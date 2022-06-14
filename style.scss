@@ -212,19 +212,34 @@ section {
             display: flex;
             width: 100%;
             justify-content: space-around;
+            align-items: center;
+
             li {
                 width: 100px;
+                height: 100%;
             }
 
             .githublogo {
                 display: flex;
                 align-items: center;
+
+                a:hover {
+                    color:#BF7230;
+                }
             }
+
+            
         }
 
         svg {
             path {
                 fill: #f9eeee;
+            }
+        }
+
+        svg:hover {
+            path {
+                fill: #BF7230;
             }
         }
 
